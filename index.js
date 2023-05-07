@@ -68,11 +68,7 @@ let ownerBasedData = {}
 
 const contractAddress = "0x2ac3C692f8cd4e87Bd46Ddf471EAAe59291D8b74";
 const contract = new ethers.Contract(contractAddress, erc721ABI, provider);
-
-
-const test = async () => {
-    console.log(await contract.tokenURI(3))
-}   
+   
 const addTransaction = async (from, to , tokenId, event) => {
     let tokenURI;
     if(tokenId){
